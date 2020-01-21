@@ -1,4 +1,4 @@
-#This project is hosted at 
+# This project is hosted at 
 https://techlaweatherapp.herokuapp.com/weather
 
 # Tech.LAWeatherApp
