@@ -7,6 +7,7 @@ import com.adhithya.app.ws.ui.model.response.UserRest;
 
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -27,7 +28,7 @@ public class WeatherController {
 		return "get user was called";
 	}
 	
-	
+	@CrossOrigin
 	@PostMapping
 	public String createUser(@RequestBody WeatherRequestModel weatherInfo)
 	{
