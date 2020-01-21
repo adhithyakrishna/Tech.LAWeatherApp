@@ -36,6 +36,8 @@ public class WeatherController {
 		String longitude = weatherInfo.getLongitude();
 		String exclusions = weatherInfo.getExclusion();
 		
+		
+		
 		WeatherDto weatherDto = new WeatherDto();
 		BeanUtils.copyProperties(weatherInfo, weatherDto);
 		

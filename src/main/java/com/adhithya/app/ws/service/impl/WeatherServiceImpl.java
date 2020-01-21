@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.adhithya.app.ws.service.WeatherService;
 import com.adhithya.app.ws.shared.dto.WeatherDto;
+import com.adhithya.app.ws.utility.MakeRequest;
 
 @Service
 public class WeatherServiceImpl implements WeatherService {
@@ -16,6 +17,8 @@ public class WeatherServiceImpl implements WeatherService {
 		
 		System.out.println(weatherInformation.getExclusion());
 		
+		MakeRequest makeRequest = new MakeRequest();
+		makeRequest.makeGetCall("url");
 //		BeanUtils.copyProperties();
 
 		
