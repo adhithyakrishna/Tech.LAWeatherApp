@@ -18,5 +18,5 @@ curl --location --request POST 'http://localhost:8080/weatherinfo' \
 https://spring.io/guides/gs/rest-service/ - for making http request.
 
 # Time taken 
-Start time : 11.48 AM . I was able to complete the backend part in 1 hour 15 minutes. Proceeding with frontend.
+Start time : 11.48 AM . I was able to complete the backend part in 1 hour 15 minutes.
 
