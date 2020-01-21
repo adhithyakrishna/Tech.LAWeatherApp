@@ -20,3 +20,16 @@ https://spring.io/guides/gs/rest-service/ - for making http request.
 # Time taken 
 Start time : 11.48 AM . I was able to complete the backend part in 1 hour 15 minutes.
 
+# Update
+
+The backend has been deployed at https://techlabackend.herokuapp.com/weatherinfo
+
+```javascript
+curl --location --request POST 'https://techlabackend.herokuapp.com/weatherinfo' \
+--header 'Content-Type: application/json' \
+--header 'Accept: application/json' \
+--data-raw '{
+	"latitude" : "37.8267",
+	"longitude" : "-122.4233"
+}'
+```
