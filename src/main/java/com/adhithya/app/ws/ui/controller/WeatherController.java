@@ -29,21 +29,15 @@ public class WeatherController {
 	
 	
 	@PostMapping
-	public WeatherRequestModel createUser(@RequestBody WeatherRequestModel weatherInfo)
+	public String createUser(@RequestBody WeatherRequestModel weatherInfo)
 	{
-		
-		String latitude = weatherInfo.getLatitude();
-		String longitude = weatherInfo.getLongitude();
-		String exclusions = weatherInfo.getExclusion();
-		
-		
-		
+
 		WeatherDto weatherDto = new WeatherDto();
 		BeanUtils.copyProperties(weatherInfo, weatherDto);
 		
-		weatherService.getWeatherInfo(weatherDto);
+		String response = weatherService.getWeatherInfo(weatherDto);
 		
-		return weatherInfo;
+		return response;
 	}
 	
 }

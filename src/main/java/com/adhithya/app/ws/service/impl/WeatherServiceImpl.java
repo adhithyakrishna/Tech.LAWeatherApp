@@ -13,16 +13,21 @@ public class WeatherServiceImpl implements WeatherService {
 
 	
 	@Override
-	public WeatherDto getWeatherInfo(WeatherDto weatherInformation) {
+	public String getWeatherInfo(WeatherDto weatherInformation) {
 		
 		System.out.println(weatherInformation.getExclusion());
-		
+		String response = "";
 		MakeRequest makeRequest = new MakeRequest();
-		makeRequest.makeGetCall("url");
-//		BeanUtils.copyProperties();
+		try {
+			response = makeRequest.makeGetCall(weatherInformation);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
 
 		
-		return null;
+		return response;
 	}
 
 }
