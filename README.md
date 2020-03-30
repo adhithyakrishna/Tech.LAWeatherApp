@@ -1,5 +1,5 @@
 # This project is hosted at 
-https://techlaweatherapp.herokuapp.com/weather
+http://techlaweatherapp.herokuapp.com/weather
 
 # Tech.LAWeatherApp
 This project is a part of the engineering challenge for tech.La internship. The core idea of this project is to fetch weather information based on location pointed out by the user on google maps. This repository contains the backend part of the application.
